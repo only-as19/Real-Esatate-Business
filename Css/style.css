@@ -18,8 +18,8 @@ body{
 }
 
 .hero{
-   height:500px;
    width: 100%;
+   height: 100%;
    object-fit: cover;
 
 }
@@ -39,7 +39,7 @@ h1{
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 1.9rem;
 }
 
 h3{
@@ -51,16 +51,16 @@ h3{
 }
 
 .hero-text{
-    margin-top: 20px;
+    margin-top: 1.428em;
 }
 
 
 .hero-btn{
-    margin-top: 40px;
+    margin-top: 2.857em;
 }
 
 .hero-reviews{
-    margin-top: 30px;
+    margin-top: 2.1428em;
 }
 
 .btn-primary{
@@ -86,8 +86,9 @@ h3{
     color: black;
 }
 
-.btn-black{
-    border: 2px solid #1d1d1d;
+.btn-black,
+.hero-review-block{
+    border: 2px solid #2d2d2d;
 }
 
 .btn-black:hover{
@@ -103,6 +104,10 @@ h3{
      border: 2px solid #1d1d1d;
 }
 
+
+.hero-review-block:hover{
+    transform: translateY(-10px);
+}
 
 
 
@@ -158,21 +163,28 @@ nav a:hover{
 
 .hero-review-block{
     background-color: #1a1a1a;
-    padding: 1em 2em;
+    padding: 1em 0.5em 1em .9em;
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
 }
 
 .hero-section-content{
-    width: 50%;
+    width: 55%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .hero-section1{
-    padding: 20px ;
+    padding: 5.7142em;
 }
 
 .hero-img{
-    width: 50%;
+    width: 45%;
+    max-height: 600px;
 }
 
