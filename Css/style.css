@@ -10,34 +10,64 @@ body{
     font-family: "Urbanist", sans-serif;
     background: #141414;
     color: #999999;
-
+    font-size: .9rem;
 }
 
 .logo{
     height: 36px;
 }
 
+.hero{
+   height:500px;
+   width: 100%;
+   object-fit: cover;
+
+}
+
 /* Typography */
 
+h1,
+h2,
+h3,
+h4{
+    color: white;
+}
 
 
 h1{
-    font-size: 2.5rem;
+    font-size: 3.2rem;
 }
 
 h2{
-    font-size: 2.2rem;
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
 }
 
 .body-bold{
     color: white;
 }
 
+.hero-text{
+    margin-top: 20px;
+}
+
+
+.hero-btn{
+    margin-top: 40px;
+}
+
+.hero-reviews{
+    margin-top: 30px;
+}
+
 .btn-primary{
     text-decoration: none;
     color: white;
     display: inline-block;
-    padding: .8em 1em;
+    padding: .9em 1.14em;
     border-radius: 7px;
     
 }
@@ -81,7 +111,7 @@ h2{
 /* Layout */
 
 header{
-    padding: 1.25em 2.5em;
+    padding: 1.42em 2.85em;
     background: #1a1a1a;
     display: flex;
     justify-content: space-between;
@@ -113,3 +143,36 @@ nav a:hover{
      background-color: #141414;
      border: 2px solid #1d1d1d;
 }
+
+/* Hero Section  */
+
+.hero-sectin{
+    display: flex;
+}
+
+.hero-reviews{
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.hero-review-block{
+    background-color: #1a1a1a;
+    padding: 1em 2em;
+}
+
+.hero-section-content{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section1{
+    padding: 20px ;
+}
+
+.hero-img{
+    width: 50%;
+}
+
