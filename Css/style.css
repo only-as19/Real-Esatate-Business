@@ -24,6 +24,10 @@ body{
 
 }
 
+.hero-animation img{
+    height: 100px;
+}
+
 /* Typography */
 
 h1,
@@ -153,6 +157,7 @@ nav a:hover{
 
 .hero-sectin{
     display: flex;
+    position: relative;
 }
 
 .hero-reviews{
@@ -188,3 +193,24 @@ nav a:hover{
     max-height: 600px;
 }
 
+.hero-animation{
+    position: absolute;
+    top: 0;
+    
+    z-index: 100;
+    left: 52%;
+    height: 100px;
+    animation: spin 2s linear infinite;
+}
+
+
+/* Animation  */
+
+@keyframes spin{
+    from{
+        transform: translateY(50%) rotate(0deg);
+    }
+    to{
+        transform: translateY(50%) rotate(360deg);
+    }
+}
