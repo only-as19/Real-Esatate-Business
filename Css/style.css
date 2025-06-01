@@ -150,21 +150,22 @@ h3{
     display: flex;
     flex-direction: column;
     border: 2px solid #2d2d2d;
-    padding: 20px 20px;
+    padding: 1.42em;
 }
 
-.property-title{
-    margin-top: 20px;
+.property-title,
+.property-item-detail
+,.property-price{
+    margin-top: 1.42em;
 }
 
 .property-text{
-    margin-top: 10px;
+    margin-top: 0.71em;
 }
 
 .property-item-detail{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
 }
 
 .property-items{
@@ -181,7 +182,6 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
 }
 /* Layout */
 
