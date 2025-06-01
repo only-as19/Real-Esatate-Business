@@ -125,10 +125,64 @@ h3{
     transform: scale(1.1);
 }
 
+.description-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.p-detail{
+    width: 70%;
+}
 
+.property-card-list{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
 
+.property-card{
+    width: 33%;
+    
+}
 
+.property-card-content{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #2d2d2d;
+    padding: 20px 20px;
+}
+
+.property-title{
+    margin-top: 20px;
+}
+
+.property-text{
+    margin-top: 10px;
+}
+
+.property-item-detail{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.property-items{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #1a1a1a;
+    padding: 5px 10px;
+    border: 2px solid #2d2d2d;
+    border-radius: 20px;
+}
+
+.property-price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
 /* Layout */
 
 header{
@@ -216,6 +270,8 @@ nav a:hover{
 }
 
 
+
+
 /* Animation  */
 
 @keyframes spin{
@@ -251,3 +307,9 @@ nav a:hover{
     transition: all 0.5s ease;
 }
 
+
+.properties{
+    margin-top: 10px;
+    background: #000;
+    padding: 4em 4em;
+}
