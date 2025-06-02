@@ -363,3 +363,24 @@ nav a:hover{
 .rating img{
     height: 20px;
 }
+
+.cta-section{
+    border-top: 2px solid #2d2d2d;
+    border-bottom: 2px solid #2d2d2d;
+    padding: 4em;
+}
+
+.cta-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.cta{
+    width: 70%;
+}
+
+.cta-text{
+    margin-top: 1.42em
+}
