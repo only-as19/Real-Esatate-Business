@@ -184,16 +184,6 @@ h3{
     align-items: center;
 }
 
-.testimonials-text{
-    margin-top: 1.42em;
-}
-
-.testimonials:hover{
-    transform: scale(1.1)
-}
-.rating-img:hover{
-    transform: scale(1.1)
-}
 
 /* Layout */
 
@@ -343,6 +333,18 @@ nav a:hover{
     padding: 2.5em 3em;
     transition: all 0.3s ease-in;
 }
+
+.testimonials-text{
+    margin-top: 1.42em;
+}
+
+.testimonials:hover{
+    transform: scale(1.1)
+}
+.rating-img:hover{
+    transform: scale(1.1)
+}
+
 
 .rating{
     display: flex;
