@@ -367,7 +367,7 @@ nav a:hover{
 .cta-section{
     border-top: 2px solid #2d2d2d;
     border-bottom: 2px solid #2d2d2d;
-    padding: 4em;
+    padding:1em 4em 4em 4em;
 }
 
 .cta-info{
@@ -384,3 +384,99 @@ nav a:hover{
 .cta-text{
     margin-top: 1.42em
 }
+
+
+/* Footer  */
+
+footer {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  padding: 60px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    margin-bottom: 1em;
+}
+
+.footer .logo img {
+  width: 120px;
+  margin-bottom: 40px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-links div {
+  flex: 1 1 180px;
+}
+
+.footer-links h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  font-size: 14px;
+  color: #cccccc;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.footer-links ul li:hover {
+  color: #8b5cf6; /* Violet hover effect */
+}
+
+.footer-bottom {
+  border-top: 1px solid #333333;
+  padding-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  color: #999999;
+}
+
+.footer-bottom a {
+  color: #999999;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  color: #8b5cf6;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon-box img {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: brightness(0.9);
+}
+
+.social-icon-box img:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
