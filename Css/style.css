@@ -391,7 +391,7 @@ nav a:hover{
 footer {
   background-color: #0a0a0a;
   color: #ffffff;
-  padding: 60px 20px 20px;
+  padding: 4.28em 1.42em 1.42em;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -401,7 +401,7 @@ footer {
 
 .footer .logo img {
   width: 120px;
-  margin-bottom: 40px;
+  margin-bottom: 2.85em;
 }
 
 .footer-links {
@@ -409,7 +409,7 @@ footer {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 2.85em;
 }
 
 .footer-links div {
@@ -417,9 +417,8 @@ footer {
 }
 
 .footer-links h4 {
-  font-size: 16px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 1em;
   color: #ffffff;
 }
 
@@ -430,7 +429,6 @@ footer {
 }
 
 .footer-links ul li {
-  font-size: 14px;
   color: #cccccc;
   margin-bottom: 10px;
   cursor: pointer;
@@ -443,12 +441,11 @@ footer {
 
 .footer-bottom {
   border-top: 1px solid #333333;
-  padding-top: 20px;
+  padding-top: 1.42em;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
   color: #999999;
 }
 
@@ -463,13 +460,13 @@ footer {
 }
 
 .social-icons {
-  margin-top: 10px;
+  margin-top: 0.71em;
 }
 
 .social-icon-box img {
   width: 24px;
   height: 24px;
-  margin-right: 12px;
+  margin-right: 1em;
   cursor: pointer;
   transition: transform 0.3s ease, filter 0.3s ease;
   filter: brightness(0.9);
