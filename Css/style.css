@@ -329,6 +329,7 @@ nav a:hover{
 .testimonials{
     border: 2px solid #2d2d2d;
     width: 30%;
+    min-width: 300px;
     border-radius: 10px;
     padding: 2.5em 3em;
     transition: all 0.3s ease-in;
@@ -364,6 +365,19 @@ nav a:hover{
     height: 20px;
 }
 
+@media (max-width:750px){
+    .testimonials-list{
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .testimonials{
+        width: 100%;
+    }
+}
+
+/* CTA Section  */
+
 .cta-section{
     border-top: 2px solid #2d2d2d;
     border-bottom: 2px solid #2d2d2d;
@@ -383,6 +397,18 @@ nav a:hover{
 
 .cta-text{
     margin-top: 1.42em
+}
+
+@media (max-width:750px) {
+    .cta-info{
+        flex-direction: column;
+        gap:2em;
+    }
+
+    .btn-primary{
+        width: 70%;
+        text-align: center;
+    }
 }
 
 
