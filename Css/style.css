@@ -184,6 +184,49 @@ h3{
     align-items: center;
 }
 
+@media(max-width:750px){
+
+    section.properties {
+    padding: 1em;
+  }
+
+  .description-data{
+    margin-top: 1em;
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .p-detail{
+    align-self:self-start;
+    width: 100%;
+  }
+    .property-card-list{
+        flex-direction: column;
+    }
+    
+    .property-card{
+        width: 100%;
+        margin-top: 2em;
+    }
+    
+    .property-title{
+        margin-top: .5em;
+    }
+    
+    .property-card-content{
+        border-radius: 10px;
+    }
+
+    .property-item-detail{
+        flex-wrap: wrap;
+    }
+
+    .property-items{
+        width: 45%;
+        margin-top: 1em;
+    }
+}
+
 
 /* Layout */
 
@@ -273,6 +316,11 @@ nav a:hover{
 
 @media (max-width:750px){
    
+    .hero-animation{
+        left: 0;
+        top: 43%;
+    }
+
     .hero-sectin{
         flex-direction: column;
     }
@@ -292,6 +340,10 @@ nav a:hover{
         padding: 1em;
     }
 
+    .hero-img img{
+        border-radius: 10px;
+    }
+
     .hero-section-content{
         order: 3;
         text-align: center;
@@ -299,10 +351,15 @@ nav a:hover{
 
     h1{
         font-size: 1.8rem;
+        font-weight: 600;
     }
 
     .hero-sectin a{
         margin-top: .8em;
+    }
+
+    .hero-title{
+        margin-top: 1em;
     }
 }
 
@@ -548,7 +605,6 @@ footer {
 
   .footer-bottom {
     flex-direction: column;
-    align-items: flex-start;
     gap: 10px;
   }
 
