@@ -271,6 +271,42 @@ nav a:hover{
     animation: spin 2s linear infinite;
 }
 
+@media (max-width:750px){
+   
+    .hero-sectin{
+        flex-direction: column;
+    }
+
+    .hero-img,
+    .hero-section-content{
+        width: 100%;
+    }
+
+    .hero-section1{
+        padding: 1em 2em 3em;
+    }
+    
+
+    .hero-img{
+        order: 1;
+        padding: 1em;
+    }
+
+    .hero-section-content{
+        order: 3;
+        text-align: center;
+    }
+
+    h1{
+        font-size: 1.8rem;
+    }
+
+    .hero-sectin a{
+        margin-top: .8em;
+    }
+}
+
+
 
 
 
