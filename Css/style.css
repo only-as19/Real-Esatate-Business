@@ -264,8 +264,52 @@ nav a:hover{
      border: 2px solid #1d1d1d;
 }
 
-.hamburger{
+.hamburger {
     display: none;
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: auto;
+    }
+
+    nav {
+        display: none;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav li {
+        margin: 0.5em 0;
+    }
+
+    nav a {
+        width: 100%;
+        padding: 0.75em 1em;
+        display: block;
+    }
+
+    .btn-primary {
+        width: 100%;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    nav.active {
+        display: block;
+    }
 }
 
 /* Hero Section  */
