@@ -450,6 +450,18 @@ nav a:hover{
     transition: all 0.5s ease;
 }
 
+@media (max-width:700px) {
+    .service-wrap{
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        
+    }
+    .service-box{
+        width: 45%;
+    }
+}
+
 
 .properties{
     margin-top: 10px;
