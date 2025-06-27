@@ -3,21 +3,90 @@
     margin: 0;
 }
 
+p,span{
+    font-size: 0.9rem;
+    color: gray;
+}
+
 form{
     width: 40%;
     background-color: bisque;
 }
 
-.personal-input{
-
-}
-
 input,select{
     padding: 10px;
-    border:none;
-    border-radius: 10px;
+    border: none;
+    border-radius: 5px;
 }
+.personal-input {
+      width: 100%;
+      display: flex;
+      gap: 10px; /* space between input and select */
+    }
+
+    .personal-input input,
+    .personal-input select {
+      width: 48%;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+
+
 
 input:focus {
     outline: 2px solid gray;
+}
+
+.agree{
+    text-align: center;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: #703BF7;
+    border-radius: 8px;
+}
+
+.log:hover{
+    color: azure;
+}
+.log:focus{
+    color: azure;
+}
+
+.form-container{
+    text-align: center;
+    display: flex;
+    padding: 40px 20px;
+    flex-direction: column;
+    gap: 10px;    
+}
+
+.personal-input{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.loc-pass{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.agree{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.form-bottom{
+    display: flex;
+    justify-content: space-between;
 }
