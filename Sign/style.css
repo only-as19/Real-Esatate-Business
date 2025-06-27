@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+form{
+    width: 40%;
+    background-color: bisque;
+}
+
+.personal-input{
+
+}
+
+input,select{
+    padding: 10px;
+    border:none;
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: 2px solid gray;
+}
