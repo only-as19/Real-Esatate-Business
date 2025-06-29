@@ -13,7 +13,7 @@ form h2{
 }
 
 form{
-    width: 35%;
+    width: 38%;
     background-color: bisque;
     background-color: #1a1a1a;
     border-radius: 5px;
@@ -58,7 +58,7 @@ input:focus {
 
 button{
     width: 100%;
-    padding: 0.9em;
+    padding: 1.2em;
     font-weight: 600;
     color: white;
     border: none;
@@ -105,8 +105,8 @@ button{
 
 .personal-input{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 
@@ -137,4 +137,27 @@ main{
     background-position: 0% 0%;
     background-repeat: repeat;
     background-color: rgba(0,0,0,0);
+}
+
+
+@media (max-width:750px) {
+    form p{
+        font-size: .8rem;
+    }
+
+    form{
+        width: 80%;
+    }
+
+    .personal-input{
+        flex-direction: column;
+    }
+    
+    .personal-input input{
+        width: 100%;
+    }
+    
+    .personal-input select{
+        width: 100%;
+    }
 }
