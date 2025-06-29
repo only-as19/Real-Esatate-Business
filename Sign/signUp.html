@@ -18,10 +18,10 @@
     <body>
         <header>
     <div class="logo">
-        <img src="Img/Logo.png" alt="Estatein">
+        <img src="../Img/Logo.png" alt="Estatein">
     </div>
 
-    <img src="Img/hamburger.png" alt="Hamburger" class="hamburger" id="hamburger-icon">
+    <img src="../Img/hamburger.png" alt="Hamburger" class="hamburger" id="hamburger-icon">
 
     <nav id="nav-menu">
         <ul>
@@ -129,20 +129,8 @@
     </div>
   </div>
 </footer>
-        <script>
-    const icon = document.getElementById('eye-icon');
-    const eye = document.getElementById('eye-img');
-    const pass = document.getElementById('password');
-
-    icon.addEventListener('click', () => {
-        if (pass.type === "password") {
-            pass.type = "text";
-            eye.src = "../Img/eye_open.png";
-        } else {
-            pass.type = "password";
-            eye.src = "../Img/eye_close.png";
-        }
-    });
+        <script src="../JS/index.js">
+    
 </script>
 
 </body>

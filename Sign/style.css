@@ -56,7 +56,7 @@ input:focus {
     text-align: center;
 }
 
-button{
+form button{
     width: 100%;
     padding: 1.2em;
     font-weight: 600;

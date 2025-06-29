@@ -301,7 +301,7 @@ nav a:hover{
         display: block;
     }
 
-    .btn-primary {
+    header .btn-primary {
         width: 100%;
         text-align: center;
         margin-top: 1em;
