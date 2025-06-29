@@ -28,7 +28,7 @@ select{
 }
 
 input,select{
-    padding: 12px;
+    padding: 0.9em;
     border: none;
     border-radius: 5px;
     border: 1px solid #2d2d2d;
@@ -58,7 +58,7 @@ input:focus {
 
 button{
     width: 100%;
-    padding: 10px;
+    padding: 0.9em;
     font-weight: 600;
     color: white;
     border: none;
@@ -98,9 +98,9 @@ button{
 .form-container{
     text-align: center;
     display: flex;
-    padding: 40px 20px;
+    padding: 2.5em 1.25em;
     flex-direction: column;
-    gap: 10px;    
+    gap: 20px;    
 }
 
 .personal-input{
@@ -131,5 +131,10 @@ button{
 main{
     display: flex;
     justify-content: center;
-    padding: 40px 0;
+    padding: 2.5em 0;
+    background-image: repeating-radial-gradient(ellipse farthest-corner at left top, rgba(112,59,247,1) 0%, rgba(7,7,7,1) 19%, rgba(2,2,2,1) 40%, rgba(5,5,5,1) 60%, rgba(7,7,7,1) 80%, rgba(112,59,247,1) 100%);
+    background-size: auto;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    background-color: rgba(0,0,0,0);
 }
