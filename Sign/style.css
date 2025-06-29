@@ -27,7 +27,6 @@ input,select{
     .personal-input input,
     .personal-input select {
       width: 48%;
-      font-size: 16px;
       box-sizing: border-box;
     }
 
@@ -57,6 +56,28 @@ button{
 .log:focus{
     color: azure;
 }
+
+
+.div{
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.div input{
+    width: 100%;
+}
+
+.eye-icon img{
+    height: 20px;
+}
+
+.eye-icon{
+    position: absolute;
+    right: 8px;
+    top: 9px;
+}
+
 
 .form-container{
     text-align: center;
