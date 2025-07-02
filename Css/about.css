@@ -1,1 +1,48 @@
 
+svg{
+    height: 35px;
+}
+
+.value-container{
+  display: flex;
+  align-items: center;
+}
+
+.value-cards{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  box-shadow: 0 0 10px #2d2d2d;
+  gap: 30px;
+  padding: 30px;
+}
+
+.value-description{
+  padding: 30px;
+}
+
+.value-card{
+  padding: 20px;
+  border-right: 1px solid #2d2d2d;
+}
+
+.value-card-head{
+  display: flex;
+  align-items: center;
+  gap:10px;
+}
+
+.svg{
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items:  center;
+  border-radius: 50%;
+  border: 2px solid #703BF7;
+}
+
+.svg span{
+  color: #703BF7;
+}
+
+
