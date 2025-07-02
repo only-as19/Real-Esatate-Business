@@ -96,6 +96,55 @@ svg{
   transform: scale(1.1);
 }
 
+@media (max-width: 750px) {
+  .value-container {
+    flex-direction: column;
+  }
+
+  .value-description {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .value-cards {
+    grid-template-columns: 100%;
+    padding: 20px;
+  }
+
+  .value-card {
+    border-right: none;
+    border-bottom: 1px solid #2d2d2d;
+  }
+
+  .value-card:last-child {
+    border-bottom: none;
+  }
+
+  .value-card-head {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .achievement-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .achievement-card {
+    width: 100%;
+  }
+
+  .description-data {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .btn-primary {
+    margin-top: 15px;
+  }
+}
+
 
 
 /* Steps Section */
