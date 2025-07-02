@@ -7,3 +7,11 @@
     });
 
   
+ const links = document.querySelectorAll('#nav-menu a');
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      links.forEach(l => l.classList.remove('active')); // remove from all
+      link.classList.add('active'); // add to clicked
+    });
+  });
