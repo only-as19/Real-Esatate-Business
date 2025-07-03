@@ -47,4 +47,24 @@ textarea {
 }
 
 /* Media query for screens smaller than or equal to 750px */
+@media (max-width: 750px) {
+  .form-container {
+    width: 90%; /* Make the form container width more flexible */
+    padding: 20px; /* Reduce padding on smaller screens */
+    grid-template-columns: 1fr; /* Stack the form fields vertically */
+  }
 
+  .input-wrap {
+    margin-top: 10px; /* Reduce margin for smaller screens */
+  }
+
+  .contact-form input,
+  textarea {
+    padding: 12px; /* Adjust input and textarea padding */
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .span-2 {
+    grid-column: span 1; /* Ensure textarea stays within one column when stacking */
+  }
+}
