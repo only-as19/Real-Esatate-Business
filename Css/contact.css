@@ -189,4 +189,87 @@ textarea {
 
     /* Explore section */
 
-    
+    .grid-container{
+      padding: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+      gap
+    }
+
+    .grid-container img{
+      max-height: 200px;
+    }
+
+    .nested-right{
+      display: flex;
+      gap: 20px;
+    }.grid-container {
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px;
+  justify-items: center;
+}
+
+.grid-container img {
+  width: 100%; /* Ensure images are responsive and fill their container */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images cover the area without distortion */
+  border-radius: 8px;
+}
+
+.nested-right {
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.box {
+  width: 100%;
+}
+
+.box6 {
+  grid-column: span 2; /* Make the text box span both columns */
+  text-align: center;
+}
+
+.box6 h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.box6 p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+  padding: 0 20px;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 750px) {
+  .grid-container {
+    grid-template-columns: 1fr; /* Stack columns vertically on small screens */
+  }
+
+
+  .box6 {
+    grid-column: span 1; /* Ensure the text box spans one column */
+    padding: 20px;
+  }
+
+  .box6 h2 {
+    font-size: 20px;
+  }
+
+  .box6 p {
+    font-size: 14px;
+  }
+
+  .grid-container img {
+    width: 100%; /* Ensure images fit within the container on small screens */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
