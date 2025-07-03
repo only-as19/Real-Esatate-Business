@@ -1,0 +1,50 @@
+.contact-form {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-container {
+  border: 2px solid #2d2d2d;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 20px;
+  padding: 60px;
+  width: 70%;
+}
+
+.input-wrap {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form input {
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  border: 2px solid #2d2d2d;
+  background: inherit;
+  outline: none;
+  color: gray;
+  column-gap: 10px;
+}
+
+textarea {
+  border: 2px solid #2d2d2d;
+  padding: 20px;
+  resize: none;
+  height: 120px;
+  background-color: inherit;
+  border-radius: 5px;
+  outline: none;
+}
+
+.span-2 {
+  grid-column: span 2; /* This makes the textarea span across both columns */
+}
+
+/* Media query for screens smaller than or equal to 750px */
+
