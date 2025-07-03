@@ -1,90 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Page</title>
-    <link rel="icon" href="./Img/favi.png" type="image/x-icon">
 
-    <link rel="stylesheet" href="./Css/contact.css">
-    <link rel="stylesheet" href="./Css/style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <link rel="icon" href="./Img/favi.png" type="image/x-icon">
+
+  <link rel="stylesheet" href="./Css/contact.css">
+  <link rel="stylesheet" href="./Css/style.css">
 </head>
+
 <body>
-    <header>
+  <header>
     <div class="logo">
-        <img src="Img/Logo.png" alt="Estatein">
+      <img src="Img/Logo.png" alt="Estatein">
     </div>
 
     <img src="Img/hamburger.png" alt="Hamburger" class="hamburger" id="hamburger-icon">
 
     <nav id="nav-menu">
-        <ul>
-            <li><a href="./index.html" class="active">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contact.html">Services</a></li>
-        </ul>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a class="active" href="./contact.html">Services</a></li>
+      </ul>
     </nav>
 
     <a href="#" class="btn-primary btn-purple">Contact Us</a>
-</header>
+  </header>
+  <section class="cta-section">
+    <div class="cta-info">
+      <div class="cta">
+        <h2>Get in touch with Estatein</h2>
+        <p class="cta-text">Welcome to estatein's Contact Page. WE're here to assist you with any inquiries, requests,
+          or feedback you may have. Whether ypu're looking to buy or sell property, explore investment oppertunitiees,
+          or simply eant to connect, we're just a message away. Reach out to us and let's start a conversation</p>
 
-<footer class="footer">
-   <div class="logo">
-            <img src="Img/Logo.png" alt="Estatein">
+  </section>
+  <section class="services body-bold">
+    <div class="service-wrap">
+      <div class="service-box">
+        <img src="Img/Home.png" alt="Dream Home">
+        <p>Find Your Dream Home</p>
+      </div>
+      <div class="service-box">
+        <img src="Img/Home.png" alt="Dream Home">
+        <p>Find Your Dream Home</p>
+      </div>
+      <div class="service-box">
+        <img src="Img/Home.png" alt="Dream Home">
+        <p>Find Your Dream Home</p>
+      </div>
+      <div class="service-box">
+        <img src="Img/Home.png" alt="Dream Home">
+        <p>Find Your Dream Home</p>
+      </div>
+    </div>
+  </section>
+  <main>
+
+    <section class="office-locations">
+  <div class="office-container">
+    <h2>Discover Our Office Locations</h2>
+    <p>
+      Estatein is here to serve you across multiple locations. Whether you're looking to meet our team, discuss real estate opportunities, or simply drop by for a chat, we have offices conveniently located to serve your needs.
+    </p>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-type="all">All</button>
+      <button class="filter-btn" data-type="regional">Regional</button>
+      <button class="filter-btn" data-type="international">International</button>
+    </div>
+
+    <div class="cards">
+      <div class="card" data-type="regional">
+        <h4>Main Headquarters</h4>
+        <h3>123 Estatein Plaza, City Center, Metropolis</h3>
+        <p>Our main headquarters serve as the heart of Estatein. Located in the bustling city center, this is where our core team of experts operates.</p>
+        <div class="contact-info">
+          <span><i class="fa fa-envelope"></i> info@estatein.com</span>
+          <span><i class="fa fa-phone"></i> +1 (123) 456-7890</span>
+          <span><i class="fa fa-map-marker"></i> Metropolis</span>
         </div>
+        <button class="direction-btn">Get Direction</button>
+      </div>
 
-  <div class="footer-links">
-    <div>
-      <h4>Home</h4>
-      <ul>
-        <li>Hero Section</li>
-        <li>Features</li>
-        <li>Properties</li>
-        <li>Testimonials</li>
-        <li>FAQs</li>
-      </ul>
-    </div>
-    <div>
-      <h4>About Us</h4>
-      <ul>
-        <li>Our Story</li>
-        <li>Our Works</li>
-        <li>How It Works</li>
-        <li>Our Team</li>
-        <li>Our Clients</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Services</h4>
-      <ul>
-        <li>Valuation Mastery</li>
-        <li>Strategic Marketing</li>
-        <li>Negotiation Wizardry</li>
-        <li>Closing Success</li>
-        <li>Property Management</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Contact Us</h4>
-      <ul>
-        <li>Contact Form</li>
-        <li>Our Offices</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <p>©2023 Estatein. All Rights Reserved</p>
-    <a href="#">Terms & Conditions</a>
-    <div class="social-icons">
-      <div class="social-icon-box">
-        <img src="Img/Facebook.png" alt="Facebook">
-        <img src="Img/LinkdIn.png" alt="LinkdIn">
-        <img src="Img/Twitter.png" alt="Twitter">
-        <img src="Img/Youtube.png" alt="Youtube">
+      <div class="card" data-type="international">
+        <h4>Regional Offices</h4>
+        <h3>456 Urban Avenue, Downtown District, Metropolis</h3>
+        <p>Estatein's presence extends to multiple regions. Discover our international offices staffed by experts who understand the market.</p>
+        <div class="contact-info">
+          <span><i class="fa fa-envelope"></i> info@restatein.com</span>
+          <span><i class="fa fa-phone"></i> +1 (123) 628-7890</span>
+          <span><i class="fa fa-map-marker"></i> Metropolis</span>
+        </div>
+        <button class="direction-btn">Get Direction</button>
       </div>
     </div>
   </div>
-</footer>
+</section>
+
+    <section class="grid-container">
+      <!-- Row 1 -->
+      <div class="box box1"><img src="images/staff1.png" alt=""></div>
+      <div class="box box2">
+        <img src="images/staff2.png" alt="">
+      </div>
+
+      <!-- Row 2 -->
+      <div class="box box3">
+        <img src="images/staff3.png" alt="">
+      </div>
+
+      <!-- Right side (split into box 6 and 7) -->
+      <div class="nested-right">
+
+        <div class="box box4"><img src="images/staff4.png" alt="">
+        </div>
+        <div class="box box6">
+          <img src="images/staff5.png" alt="">
+        </div>
+      </div>
+      <div class="box box8">
+        <h2>Explore Estatein's World</h2>
+        <p>Step inside the world of Estatein, where professionalism meets warmth, and expertise meets passion. Our gallery offers a glimpse into our team and workspaces, inviting you to get to know us better</p>
+      </div>
+      <div class="box box6"><img src="images/staff6.png" alt=""></div>
+
+      </div>
+    </section>
+
+    <div class="cta">
+      <h2>Start Your Real Estate Journey Today</h2>
+      <p class="cta-text">Your dream property is just a click away. Whether you're looking for a new home, a strategic
+        investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first
+        step towards your real estate goals and explore our available properties or get in touch with our team for
+        personalized assistance.</p>
+    </div>
+    <a href="#" class="btn-primary btn-purple">Explore Properties</a>
+    </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="logo">
+      <img src="Img/Logo.png" alt="Estatein">
+    </div>
+
+    <div class="footer-links">
+      <div>
+        <h4>Home</h4>
+        <ul>
+          <li>Hero Section</li>
+          <li>Features</li>
+          <li>Properties</li>
+          <li>Testimonials</li>
+          <li>FAQs</li>
+        </ul>
+      </div>
+      <div>
+        <h4>About Us</h4>
+        <ul>
+          <li>Our Story</li>
+          <li>Our Works</li>
+          <li>How It Works</li>
+          <li>Our Team</li>
+          <li>Our Clients</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li>Valuation Mastery</li>
+          <li>Strategic Marketing</li>
+          <li>Negotiation Wizardry</li>
+          <li>Closing Success</li>
+          <li>Property Management</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Us</h4>
+        <ul>
+          <li>Contact Form</li>
+          <li>Our Offices</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>©2023 Estatein. All Rights Reserved</p>
+      <a href="#">Terms & Conditions</a>
+      <div class="social-icons">
+        <div class="social-icon-box">
+          <img src="Img/Facebook.png" alt="Facebook">
+          <img src="Img/LinkdIn.png" alt="LinkdIn">
+          <img src="Img/Twitter.png" alt="Twitter">
+          <img src="Img/Youtube.png" alt="Youtube">
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
