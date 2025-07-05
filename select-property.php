@@ -9,7 +9,77 @@
     <link rel="stylesheet" href="Css/style.css">
     <link rel="icon" href="./Img/favi.png" type="image/x-icon">
     
+    <style>
+    /* General Styles for Property Cards */
+    .property-card-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-between;
+    }
 
+    .filter-select {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .property-card {
+        width: 32%;  /* Default: 3 cards per row */
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        display: none; /* Hide all cards initially */
+    }
+
+    .property-card img {
+        width: 100%; /* Ensure images take full width of the card */
+        border-radius: 10px;
+    }
+
+    .property-card .property-title {
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    .property-card .property-price {
+        margin-top: 10px;
+    }
+
+    /* Mobile/Tablet Responsive Styles */
+    @media (max-width: 750px) {
+        .property-card-list {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .property-card {
+            width: 90%;  /* Make cards take up most of the width */
+            margin-bottom: 20px;  /* Space between the cards */
+        }
+
+        .property-title {
+            font-size: 16px;
+        }
+
+        .property-price {
+            font-size: 14px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .property-card {
+            padding: 10px;
+        }
+
+        .property-title {
+            font-size: 14px;
+        }
+
+        .property-price {
+            font-size: 12px;
+        }
+    }
+    </style>
 </head>
 <body>
     <header>
@@ -30,7 +100,50 @@
     <a href="./Sign/signIn.html" class="btn-primary btn-purple">Login</a>
     </header>
 
-    
+   
+
+    <!-- Property Cards -->
+    <div class="property-card-list">
+        <?php if (mysqli_num_rows($result) > 0): ?>
+            <?php while ($property = mysqli_fetch_assoc($result)): ?>
+                <div class="property-card" data-city="<?= $property['city']; ?>" data-price="<?= $property['price']; ?>">
+                    <div class="property-card-content">
+                        <img src="./Img/<?= $property['image']; ?>" alt="<?= $property['name']; ?>">
+                        <h3 class="property-title"><?= $property['name']; ?></h3>
+                        <p class="property-text"><?= $property['description']; ?></p>
+                        <div class="property-item-detail body-bold">
+                            <div class="property-items">
+                                <div class="property-item-img">
+                                    <img src="./Img/<?= $property['bedroom_img']; ?>" alt="Bedroom">
+                                </div>
+                                4-bedroom
+                            </div>
+                            <div class="property-items">
+                                <div class="property-item-img">
+                                    <img src="./Img/<?= $property['bathroom_img']; ?>" alt="Bathroom">
+                                </div>
+                                3-bathroom
+                            </div>
+                            <div class="property-items">
+                                <div class="property-item-img">
+                                    <img src="./Img/<?= $property['villa_img']; ?>" alt="Villa">
+                                </div>
+                                Villa
+                            </div>
+                        </div>
+                        <div class="property-price">
+                            <p>
+                                <span>Price</span><br><span class="body-bold">$<?= number_format($property['price']); ?></span>
+                            </p>
+                            <a href="#" class="btn-primary btn-purple">View Property Details</a>
+                        </div>
+                    </div>
+                </div>
+            <?php endwhile; ?>
+        <?php else: ?>
+            <p>No properties found for the selected filters.</p>
+        <?php endif; ?>
+    </div>
 
     <footer class="footer">
        <div class="logo">
