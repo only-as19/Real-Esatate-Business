@@ -10,45 +10,51 @@
 <body>
     <header>
     <div class="logo">
-        <a href="../index.html"><img src="../Img/Logo.png" alt="Estatein"></a>
+        <a href="../index.php"><img src="../Img/Logo.png" alt="Estatein"></a>
     </div>
 
     <img src="Img/hamburger.png" alt="Hamburger" class="hamburger" id="hamburger-icon">
 
     <nav id="nav-menu">
         <ul>
-            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="../index.php" class="active">Home</a></li>
             <li><a href="../about.html">About</a></li>
             <li><a href="../contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <a href="./Sign/signIn.html" class="btn-primary btn-purple">Login</a>
+    <a href="./Sign/signInForm.php" class="btn-primary btn-purple">Login</a>
 </header>
-   <main>
-    
-     <form class="login-form" action="">
-        <div class="form-container">
-            <h2>Login to Your Account</h2>
-            <p>Enter the credentials to create the account</p>
-            <input type="text" name="" id="" placeholder="Enter Username">
-            <div class="div">
-                    <input id="password" type="password" placeholder="Enter Your Password">
+   <!-- Display Error Message if Login Fails -->
+    <?php if (isset($_GET['error'])): ?>
+        <div style="color: red; text-align: center;">
+            <?php echo htmlspecialchars($_GET['error']); ?>
+        </div>
+    <?php endif; ?>
+
+    <main>
+        <form class="login-form" action="signIn.php" method="POST">
+            <div class="form-container">
+                <h2>Login to Your Account</h2>
+                <p>Enter your credentials to log in</p>
+                <input type="email" name="email" placeholder="Enter Email" required>
+                <div class="div">
+                    <input id="password" type="password" name="password" placeholder="Enter Your Password" required>
                     <div id="eye-icon" class="eye-icon">
-                    <img id="eye-img" src="../Img/eye_close.png" alt="">
+                        <img id="eye-img" src="../Img/eye_close.png" alt="">
                     </div>
-                     </div>
-                    <button type="submit">Create Account</button>
+                </div>
+                <button type="submit">Log In</button>
                 <div class="form-bottom">
                     <p>Need Help?</p>
-                    <p><a href="signUp.html" class="log">create an account</a></p>
+                    <p><a href="signUp.html" class="log">Create an account</a></p>
                 </div>
-        </div>
-    </form>
-   </main>
+            </div>
+        </form>
+    </main>
 <footer class="footer">
    <div class="logo">
-            <a href="../index.html"><img src="../Img/Logo.png" alt="Estatein"></a>
+            <a href="../index.php"><img src="../Img/Logo.png" alt="Estatein"></a>
         </div>
 
   <div class="footer-links">

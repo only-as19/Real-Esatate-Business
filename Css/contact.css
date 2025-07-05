@@ -33,6 +33,7 @@
 }
 
 textarea {
+  color: white;
   border: 2px solid #2d2d2d;
   padding: 20px;
   resize: none;
@@ -45,6 +46,8 @@ textarea {
 .span-2 {
   grid-column: span 2; /* This makes the textarea span across both columns */
 }
+
+
 
 /* Media query for screens smaller than or equal to 750px */
 @media (max-width: 750px) {
@@ -68,6 +71,7 @@ textarea {
     grid-column: span 1; /* Ensure textarea stays within one column when stacking */
   }
 }
+
 
 /* Location */
 

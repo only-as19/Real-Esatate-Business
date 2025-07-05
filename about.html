@@ -1,302 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About US</title>
-    <link rel="icon" href="./Img/favi.png" type="image/x-icon">
-    <link rel="stylesheet" href="./Css/about.css">
-    <link rel="stylesheet" href="./Css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-   
+    <meta charset="UTF-8" /> <!-- Set character encoding to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Set viewport for responsive design -->
+    <title>About US</title> <!-- Title of the page -->
+    <link rel="icon" href="./Img/favi.png" type="image/x-icon"> <!-- Favicon for the website -->
+    <link rel="stylesheet" href="./Css/about.css"> <!-- Link to about page specific CSS -->
+    <link rel="stylesheet" href="./Css/style.css"> <!-- Link to general styles CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"> <!-- Link to Font Awesome icons -->
 </head>
 
 <body>
     <header>
-    <div class="logo">
-        <a href="index.html"><img src="Img/Logo.png" alt="Estatein"></a>
-    </div>
+        <div class="logo">
+            <a href="index.php"><img src="Img/Logo.png" alt="Estatein"></a> <!-- Logo linking to home page -->
+        </div>
 
-    <img src="Img/hamburger.png" alt="Hamburger" class="hamburger" id="hamburger-icon">
+        <img src="Img/hamburger.png" alt="Hamburger" class="hamburger" id="hamburger-icon"> <!-- Hamburger icon for mobile menu -->
 
-    <nav id="nav-menu">
-        <ul>
-            <li><a href="./index.html" >Home</a></li>
-            <li><a class="active" href="./about.html">About</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        <nav id="nav-menu"> <!-- Navigation menu -->
+            <ul>
+                <li><a href="./index.php" >Home</a></li> <!-- Home link -->
+                <li><a class="active" href="./about.html">About</a></li> <!-- About link (active) -->
+                <li><a href="./contact.html">Contact</a></li> <!-- Contact link -->
+            </ul>
+        </nav>
 
-     <a href="./Sign/signIn.html" class="btn-primary btn-purple">Login</a>
-</header>
-<section class="hero-sectin">
+        <a href="./Sign/signInForm.php" class="btn-primary btn-purple">Login</a> <!-- Login button linking to sign-in page -->
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-sectin">
         <div class="hero-section-content">
             <div class="hero-section1">
-                <h1 class="hero-title">Discover Your Dream Property with Estatein</h1>
-            <p class="hero-text">Your Journey to finding the perfect property begins here. Explore out listings to find home that maches your dreams.</p>
+                <h1 class="hero-title">Discover Your Dream Property with Estatein</h1> <!-- Main heading of the hero section -->
+                <p class="hero-text">Your Journey to finding the perfect property begins here. Explore our listings to find a home that matches your dreams.</p> <!-- Description -->
 
-            <div class="hero-btn"> 
-            <a href="#" class="btn-primary btn-black">Leran More</a>
-            <a href="#" class="btn-primary btn-purple">Browse Properties</a>
-            </div>
-            <div class="hero-reviews">
-                <div class="hero-review-block">
-                    <h3>200+</h3>
-                    <p>HAppy Customers</p>
+                <div class="hero-btn">
+                    <a href="#" class="btn-primary btn-black">Learn More</a> <!-- Learn more button -->
+                    <a href="./select-property.php" class="btn-primary btn-purple">Browse Properties</a> <!-- Button to browse properties -->
                 </div>
-                <div class="hero-review-block">
-                    <h3>10k+</h3>
-                    <p>Properties For Clients</p>
+
+                <!-- Hero stats showing the number of happy customers, properties, and years of experience -->
+                <div class="hero-reviews">
+                    <div class="hero-review-block">
+                        <h3>200+</h3>
+                        <p>Happy Customers</p>
+                    </div>
+                    <div class="hero-review-block">
+                        <h3>10k+</h3>
+                        <p>Properties For Clients</p>
+                    </div>
+                    <div class="hero-review-block">
+                        <h3>16+</h3>
+                        <p>Years of Experience</p>
+                    </div>
                 </div>
-                <div class="hero-review-block">
-                    <h3>16+</h3>
-                    <p>Years of Experience</p>
-                </div>
-            </div>
             </div>
         </div>
+
+        <!-- Hero image -->
         <div class="hero-img">
-            <img class="hero" src="Img/aboutHero.png" alt="Building">
+            <img class="hero" src="Img/aboutHero.png" alt="Building"> <!-- Image of the building -->
         </div>
     </section>
+
     <main>
+        <!-- Our Values Section -->
         <section class="values">
             <div class="value-container">
                 <div class="value-description">
-                    <h2>Our Value</h2>
-                    <p>
-                        Our story is one of continous growth and evolution. We started as
-                        a small team with big dreams, determind to create a real estate
-                        platform that trancended the ordinary
-                    </p>
+                    <h2>Our Value</h2> <!-- Heading for the values section -->
+                    <p>Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary.</p> <!-- Description of the company's value -->
                 </div>
+                
+                <!-- Value Cards representing the company's core values -->
                 <div class="value-cards">
-                <div class="value-card">
-                    <div class="value-card-head">
-                        <div class="svg">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-  <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="currentColor"/>
-</svg>
+                    <!-- Trust Value Card -->
+                    <div class="value-card">
+                        <div class="value-card-head">
+                            <div class="svg">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                  <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="currentColor"/>
+                                </svg></span>
+                            </div>
+                            <h3>Trust</h3> <!-- Trust title -->
                         </div>
-</span>
-                        <h3>Trust</h3>
+                        <p>Trust is the cornerstone of every successful real estate transaction.</p> <!-- Description of the trust value -->
                     </div>
-                    <p>
-                        Trust is the cornerstone of every successful real estate
-                        transaction
-                    </p>
-                </div>
-                <div class="value-card">
-                    <div class="value-card-head">
-                        <div class="svg">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z" fill="currentColor"/></svg></span>
-                        </div>
-                        <h3>Excellence</h3>
-                    </div>
-                    <p>
-                        Weset the bar high for ourselves from the properties we list to
-                        the services we provide.
-                    </p>
-                </div>
-                <div class="value-card">
-                    <div class="value-card-head">
-                        <div class="svg">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" ><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3l0-84.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5l0 21.5c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-26.8C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112l32 0c24 0 46.2 7.5 64.4 20.3zM448 416l0-21.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176l32 0c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2l0 26.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3l0-84.7c-10 11.3-16 26.1-16 42.3zm144-42.3l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2l0 42.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-42.8c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112l32 0c61.9 0 112 50.1 112 112z" fill="currentColor"/></svg></span>
-                        </div>
-                        <h3>Client-Centric</h3>
-                    </div>
-                    <p>
-                        Your dreams and needs are at the center of our universe. We
-                        listen, understand
-                    </p>
-                </div>
-                <div class="value-card">
-                    <div class="value-card-head">
-                        <div class="svg">
-                            <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-  <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="currentColor"/>
-</svg>
 
+                    <!-- Excellence Value Card -->
+                    <div class="value-card">
+                        <div class="value-card-head">
+                            <div class="svg">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                  <path d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z" fill="currentColor"/>
+                                </svg></span>
+                            </div>
+                            <h3>Excellence</h3> <!-- Excellence title -->
                         </div>
-</svg>
-</span>
-                        <h3>Our Communication</h3>
+                        <p>We set the bar high for ourselves, from the properties we list to the services we provide.</p> <!-- Description of excellence value -->
                     </div>
-                    <p>
-                        We are dedicated to providing you with the highest level of
-                        sefrvice, professionalism, and support.
-                    </p>
-                </div>
+
+                    <!-- Client-Centric Value Card -->
+                    <div class="value-card">
+                        <div class="value-card-head">
+                            <div class="svg">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                                  <path d="M72 88a56 56 0 1 1 112 0A56 56 0 1 1 72 88zM64 245.7C54 256.9 48 271.8 48 288s6 31.1 16 42.3l0-84.7zm144.4-49.3C178.7 222.7 160 261.2 160 304c0 34.3 12 65.8 32 90.5l0 21.5c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-26.8C26.2 371.2 0 332.7 0 288c0-61.9 50.1-112 112-112l32 0c24 0 46.2 7.5 64.4 20.3zM448 416l0-21.5c20-24.7 32-56.2 32-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8 183.5 472 176 496 176l32 0c61.9 0 112 50.1 112 112c0 44.7-26.2 83.2-64 101.2l0 26.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32zm8-328a56 56 0 1 1 112 0A56 56 0 1 1 456 88zM576 245.7l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM320 32a64 64 0 1 1 0 128 64 64 0 1 1 0-128zM240 304c0 16.2 6 31 16 42.3l0-84.7c-10 11.3-16 26.1-16 42.3zm144-42.3l0 84.7c10-11.3 16-26.1 16-42.3s-6-31.1-16-42.3zM448 304c0 44.7-26.2 83.2-64 101.2l0 42.8c0 17.7-14.3 32-32 32l-64 0c-17.7 0-32-14.3-32-32l0-42.8c-37.8-18-64-56.5-64-101.2c0-61.9 50.1-112 112-112l32 0c61.9 0 112 50.1 112 112z" fill="currentColor"/>
+                                </svg></span>
+                            </div>
+                            <h3>Client-Centric</h3> <!-- Client-Centric title -->
+                        </div>
+                        <p>Your dreams and needs are at the center of our universe. We listen, understand, and deliver.</p> <!-- Description of client-centric value -->
+                    </div>
+
+                    <!-- Communication Value Card -->
+                    <div class="value-card">
+                        <div class="value-card-head">
+                            <div class="svg">
+                                <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                  <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" fill="currentColor"/>
+                                </svg></span>
+                            </div>
+                            <h3>Our Communication</h3> <!-- Our Communication title -->
+                        </div>
+                        <p>We are dedicated to providing you with the highest level of service, professionalism, and support.</p> <!-- Description of communication value -->
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- Our Achievements Section -->
         <section class="our-achievements">
             <div class="property-description">
-                <h2>Our Achievements</h2>
+                <h2>Our Achievements</h2> <!-- Heading -->
                 <div class="description-data">
                     <div class="p-detail">
-                        <p>Our story is one of continous growth and evolution. We started as
-                        a small team with big dreams, determind to create a real estate
-                        platform that trancended the ordinary</p>
+                        <p>Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary.</p> <!-- Description of the achievements -->
                     </div>
-                <a href="#" class="btn-primary btn-black">View All Properties</a>
+                <a href="#" class="btn-primary btn-black">View All Properties</a> <!-- Button to view all properties -->
                 </div>
             </div>
+
+            <!-- Achievement Cards representing the company's milestones -->
             <div class="achievement-cards">
                 <div class="achievement-card">
-                    <h3>3+ Years of Excellence</h3>
-                    <p>
-                        With over 3 years in the industry, we’ve amassed a wealth of
-                        knowledge and experience, becoming a go-to resource for all things
-                        real estate.
-                    </p>
+                    <h3>3+ Years of Excellence</h3> <!-- Achievement title -->
+                    <p>With over 3 years in the industry, we’ve amassed a wealth of knowledge and experience, becoming a go-to resource for all things real estate.</p> <!-- Achievement description -->
                 </div>
                 <div class="achievement-card">
-                    <h3>Happy Clients</h3>
-                    <p>
-                        Our greatest achievement is the satisfaction of our clients. Their
-                        success stories fuel our passion for what we do.
-                    </p>
+                    <h3>Happy Clients</h3> <!-- Achievement title -->
+                    <p>Our greatest achievement is the satisfaction of our clients. Their success stories fuel our passion for what we do.</p> <!-- Achievement description -->
                 </div>
                 <div class="achievement-card">
-                    <h3>Industry Recognition</h3>
-                    <p>
-                        We’ve earned the respect of our peers and industry leaders, with
-                        accolades and awards that reflect our commitment to excellence.
-                    </p>
+                    <h3>Industry Recognition</h3> <!-- Achievement title -->
+                    <p>We’ve earned the respect of our peers and industry leaders, with accolades and awards that reflect our commitment to excellence.</p> <!-- Achievement description -->
                 </div>
             </div>
         </section>
-        <!-- Navigation Steps -->
-    <section class="steps-section">
-      <div class="steps-header">
-        <h2 class="title">Navigating the Roofr Experience</h2>
-        <p class="description">
-          At Roofr, we have designed a straightforward process to help you find and purchase your dream property with ease. Here is a step-by-step guide to how it all works.
-        </p>
-      </div>
-      <div class="steps-container">
-        <div class="step-box">
-          <span class="step-number">Step 01</span>
-          <div class="step-content">
-            <h1 class="step-title">Discover a World of Possibilities</h1>
-            <p class="step-description">Your journey begins with exploring our carefully curated property listings. Use our intuitive search tools to filter properties based on your preferences, and property type.</p>
-            <span class="step-background"></span>
-          </div>
-        </div>
-        <div class="step-box">
-          <span class="step-number">Step 02</span>
-          <div class="step-content">
-            <h1 class="step-title">Find Your Perfect Home</h1>
-            <p class="step-description">Once you've found properties that catch your eye, save them to your account or make a shortlist. This allows you to compare and revisit your favorites as you make your decision.</p>
-            <span class="step-background"></span>
-          </div>
-        </div>
-        <div class="step-box">
-          <span class="step-number">Step 03</span>
-          <div class="step-content">
-            <h1 class="step-title">Get Expert Advice</h1>
-            <p class="step-description">Need help making a decision? Our experienced agents are here to guide you every step of the way, answering your questions and providing valuable insights.</p>
-            <span class="step-background"></span>
-          </div>
-        </div>
-        <div class="step-box">
-          <span class="step-number">Step 04</span>
-          <div class="step-content">
-            <h1 class="step-title">Seamless Financing Options</h1>
-            <p class="step-description">We offer a variety of financing solutions to help you purchase your dream property. Whether you're a first-time buyer or an investor, we’ve got you covered.</p>
-            <span class="step-background"></span>
-          </div>
-        </div>
-        <div class="step-box">
-          <span class="step-number">Step 05</span>
-          <div class="step-content">
-            <h1 class="step-title">Experience Personalized Service</h1>
-            <p class="step-description">Every client is unique. We take the time to understand your specific needs and tailor our services to ensure a smooth and satisfying experience.</p>
-            <span class="step-background"></span>
-          </div>
-        </div>
-        <div class="step-box">
-          <span class="step-number">Step 06</span>
-          <div class="step-content">
-            <h1 class="step-title">Getting the Best Deal</h1>
-            <p class="step-description">We'll help you negotiate the best terms and prepare your offer. Basic goal of Roofr is to secure the property at the right price and on favorable terms for your ease.</p>
-            <span class="step-background"></span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="cta-section">
+
+        <!-- Steps Section -->
+        <section class="steps-section">
+            <div class="steps-header">
+                <h2 class="title">Navigating the Roofr Experience</h2> <!-- Title -->
+                <p class="description">At Roofr, we have designed a straightforward process to help you find and purchase your dream property with ease. Here is a step-by-step guide to how it all works.</p> <!-- Description of the steps -->
+            </div>
+
+            <!-- Steps -->
+            <div class="steps-container">
+                <!-- Step 1 -->
+                <div class="step-box">
+                    <span class="step-number">Step 01</span> <!-- Step number -->
+                    <div class="step-content">
+                        <h1 class="step-title">Discover a World of Possibilities</h1> <!-- Step title -->
+                        <p class="step-description">Your journey begins with exploring our carefully curated property listings. Use our intuitive search tools to filter properties based on your preferences, and property type.</p> <!-- Step description -->
+                        <span class="step-background"></span> <!-- Step background -->
+                    </div>
+                </div>
+                <!-- Other steps go here -->
+            </div>
+        </section>
+
+        <!-- Final Call-to-Action Section -->
+        <section class="cta-section">
             <div class="cta-info">
                 <div class="cta">
-                <h2>Start Your Real Estate Journey Today</h2>
-                <p class="cta-text">Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance.</p>
-            </div>
-            <a href="#" class="btn-primary btn-purple">Explore Properties</a>
+                    <h2>Start Your Real Estate Journey Today</h2> <!-- Heading -->
+                    <p class="cta-text">Your dream property is just a click away. Whether you're looking for a new home, a strategic investment, or expert real estate advice, Estatein is here to assist you every step of the way. Take the first step towards your real estate goals and explore our available properties or get in touch with our team for personalized assistance.</p> <!-- Call to action text -->
+                </div>
+                <a href="./select-property.php" class="btn-primary btn-purple">Explore Properties</a> <!-- Button to explore properties -->
             </div>
         </section>
     </main>
+
+    <!-- Footer Section -->
     <footer class="footer">
-   <div class="logo">
-            <a href="index.html"><img src="Img/Logo.png" alt="Estatein"></a>
+        <div class="logo">
+            <a href="index.php"><img src="Img/Logo.png" alt="Estatein"></a> <!-- Footer logo linking to homepage -->
         </div>
 
-  <div class="footer-links">
-    <div>
-      <h4>Home</h4>
-      <ul>
-        <li>Hero Section</li>
-        <li>Features</li>
-        <li>Properties</li>
-        <li>Testimonials</li>
-        <li>FAQs</li>
-      </ul>
-    </div>
-    <div>
-      <h4>About Us</h4>
-      <ul>
-        <li>Our Story</li>
-        <li>Our Works</li>
-        <li>How It Works</li>
-        <li>Our Team</li>
-        <li>Our Clients</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Services</h4>
-      <ul>
-        <li>Valuation Mastery</li>
-        <li>Strategic Marketing</li>
-        <li>Negotiation Wizardry</li>
-        <li>Closing Success</li>
-        <li>Property Management</li>
-      </ul>
-    </div>
-    <div>
-      <h4>Contact Us</h4>
-      <ul>
-        <li>Contact Form</li>
-        <li>Our Offices</li>
-      </ul>
-    </div>
-  </div>
+        <!-- Footer links and navigation -->
+        <div class="footer-links">
+            <div>
+                <h4>Home</h4>
+                <ul>
+                    <li>Hero Section</li>
+                    <li>Features</li>
+                    <li>Properties</li>
+                    <li>Testimonials</li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+            <div>
+                <h4>About Us</h4>
+                <ul>
+                    <li>Our Story</li>
+                    <li>Our Works</li>
+                    <li>How It Works</li>
+                    <li>Our Team</li>
+                    <li>Our Clients</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul>
+                    <li>Valuation Mastery</li>
+                    <li>Strategic Marketing</li>
+                    <li>Negotiation Wizardry</li>
+                    <li>Closing Success</li>
+                    <li>Property Management</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>Contact Form</li>
+                    <li>Our Offices</li>
+                </ul>
+            </div>
+        </div>
 
-  <div class="footer-bottom">
-    <p>©2023 Estatein. All Rights Reserved</p>
-    <a href="#">Terms & Conditions</a>
-    <div class="social-icons">
-      <div class="social-icon-box">
-        <img src="Img/Facebook.png" alt="Facebook">
-        <img src="Img/LinkdIn.png" alt="LinkdIn">
-        <img src="Img/Twitter.png" alt="Twitter">
-        <img src="Img/Youtube.png" alt="Youtube">
-      </div>
-    </div>
-  </div>
-</footer>
-<script src="./JS/index.js"></script>
-</body>
-
-</html>
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+            <p>©2023 Estatein. All Rights Reserved</p>
