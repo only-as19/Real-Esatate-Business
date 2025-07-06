@@ -1,4 +1,15 @@
+<?php
+// Database connection
+$con = mysqli_connect("localhost", "root", "", "propertybase");
 
+// Check connection
+if ($con->connect_error) {
+    die("Connection failed: " . $con->connect_error);
+}
+
+// Fetch all cities and prices for the dropdowns
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -100,50 +111,11 @@
     <a href="./Sign/signIn.html" class="btn-primary btn-purple">Login</a>
     </header>
 
-   
+    <!-- Search Filters -->
+    
 
     <!-- Property Cards -->
-    <div class="property-card-list">
-        <?php if (mysqli_num_rows($result) > 0): ?>
-            <?php while ($property = mysqli_fetch_assoc($result)): ?>
-                <div class="property-card" data-city="<?= $property['city']; ?>" data-price="<?= $property['price']; ?>">
-                    <div class="property-card-content">
-                        <img src="./Img/<?= $property['image']; ?>" alt="<?= $property['name']; ?>">
-                        <h3 class="property-title"><?= $property['name']; ?></h3>
-                        <p class="property-text"><?= $property['description']; ?></p>
-                        <div class="property-item-detail body-bold">
-                            <div class="property-items">
-                                <div class="property-item-img">
-                                    <img src="./Img/<?= $property['bedroom_img']; ?>" alt="Bedroom">
-                                </div>
-                                4-bedroom
-                            </div>
-                            <div class="property-items">
-                                <div class="property-item-img">
-                                    <img src="./Img/<?= $property['bathroom_img']; ?>" alt="Bathroom">
-                                </div>
-                                3-bathroom
-                            </div>
-                            <div class="property-items">
-                                <div class="property-item-img">
-                                    <img src="./Img/<?= $property['villa_img']; ?>" alt="Villa">
-                                </div>
-                                Villa
-                            </div>
-                        </div>
-                        <div class="property-price">
-                            <p>
-                                <span>Price</span><br><span class="body-bold">$<?= number_format($property['price']); ?></span>
-                            </p>
-                            <a href="#" class="btn-primary btn-purple">View Property Details</a>
-                        </div>
-                    </div>
-                </div>
-            <?php endwhile; ?>
-        <?php else: ?>
-            <p>No properties found for the selected filters.</p>
-        <?php endif; ?>
-    </div>
+   
 
     <footer class="footer">
        <div class="logo">
