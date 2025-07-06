@@ -8,6 +8,16 @@ if ($con->connect_error) {
 }
 
 // Fetch all cities and prices for the dropdowns
+$city_query = "SELECT DISTINCT city FROM property";
+$price_query = "SELECT DISTINCT price FROM property ORDER BY price ASC";
+
+$city_result = mysqli_query($con, $city_query);
+$price_result = mysqli_query($con, $price_query);
+
+// Check if city and price are selected
+$city_filter = isset($_POST['city']) ? $_POST['city'] : '';
+$price_filter = isset($_POST['price']) ? $_POST['price'] : '';
+
 
 ?>
 
