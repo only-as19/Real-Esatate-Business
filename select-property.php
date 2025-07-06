@@ -18,7 +18,19 @@ $price_result = mysqli_query($con, $price_query);
 $city_filter = isset($_POST['city']) ? $_POST['city'] : '';
 $price_filter = isset($_POST['price']) ? $_POST['price'] : '';
 
+// Prepare the query to fetch properties based on the filters
+$query = "SELECT * FROM property WHERE 1=1";
 
+// Add filters to the query
+if ($city_filter != '') {
+    $query .= " AND city = '$city_filter'";
+}
+
+if ($price_filter != '') {
+    $query .= " AND price <= '$price_filter'";
+}
+
+$result = mysqli_query($con, $query);
 ?>
 
 <!DOCTYPE html>
