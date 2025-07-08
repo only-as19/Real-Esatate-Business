@@ -137,7 +137,7 @@ $result = mysqli_query($con, $query);
     
 
     <!-- Property Cards -->
-   
+    
 
     <footer class="footer">
        <div class="logo">
