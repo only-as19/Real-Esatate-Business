@@ -134,7 +134,24 @@ $result = mysqli_query($con, $query);
     </header>
 
     <!-- Search Filters -->
-    
+    <div class="filter-section">
+        <form method="POST" id="filter-form">
+            <!-- Select for City -->
+            <select name="city" id="city-select" class="filter-select">
+                <option value="">All Locations</option>
+                
+            </select>
+
+            <!-- Select for Price -->
+            <select name="price" id="price-select" class="filter-select">
+                <option value="">All Price Ranges</option>
+                
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn-primary btn-purple">Search</button>
+        </form>
+    </div>
 
     <!-- Property Cards -->
     
