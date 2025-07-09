@@ -41,3 +41,25 @@
       });
     });
   });
+
+  document.getElementById('filter-form').addEventListener('submit', function (e) {
+            e.preventDefault(); // Prevent form submission to reload page
+
+            let selectedCity = document.getElementById('city-select').value;
+            let selectedPrice = document.getElementById('price-select').value;
+
+            // Loop through all property cards
+            let propertyCards = document.querySelectorAll('.property-card');
+            propertyCards.forEach(function (card) {
+                let cardCity = card.getAttribute('data-city');
+                let cardPrice = card.getAttribute('data-price');
+
+                // Show or hide based on filters
+                if ((selectedCity === '' || cardCity === selectedCity) && 
+                    (selectedPrice === '' || cardPrice <= selectedPrice)) {
+                    card.style.display = 'block'; // Show card
+                } else {
+                    card.style.display = 'none'; // Hide card
+                }
+            });
+        });
