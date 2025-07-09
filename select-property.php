@@ -139,13 +139,17 @@ $result = mysqli_query($con, $query);
             <!-- Select for City -->
             <select name="city" id="city-select" class="filter-select">
                 <option value="">All Locations</option>
-                
+                <?php while ($city = mysqli_fetch_assoc($city_result)) { ?>
+                    <option value="<?= $city['city']; ?>" <?= ($city['city'] == $city_filter) ? 'selected' : ''; ?>><?= $city['city']; ?></option>
+                <?php } ?>
             </select>
 
             <!-- Select for Price -->
             <select name="price" id="price-select" class="filter-select">
                 <option value="">All Price Ranges</option>
-                
+                <?php while ($price = mysqli_fetch_assoc($price_result)) { ?>
+                    <option value="<?= $price['price']; ?>" <?= ($price['price'] == $price_filter) ? 'selected' : ''; ?>>$<?= number_format($price['price']); ?></option>
+                <?php } ?>
             </select>
 
             <!-- Submit Button -->
