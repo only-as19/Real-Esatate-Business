@@ -25,7 +25,12 @@
 
     <a href="./Sign/signInForm.php" class="btn-primary btn-purple">Login</a>
 </header>
-   
+   <!-- Display Error Message if Login Fails -->
+    <?php if (isset($_GET['error'])): ?>
+        <div style="color: red; text-align: center;">
+            <?php echo htmlspecialchars($_GET['error']); ?>
+        </div>
+    <?php endif; ?>
 
     <main>
         <form class="login-form" action="signIn.php" method="POST">
