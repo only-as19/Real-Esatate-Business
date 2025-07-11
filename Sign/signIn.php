@@ -26,6 +26,27 @@
     <a href="./Sign/signInForm.php" class="btn-primary btn-purple">Login</a>
 </header>
    
+
+    <main>
+        <form class="login-form" action="signIn.php" method="POST">
+            <div class="form-container">
+                <h2>Login to Your Account</h2>
+                <p>Enter your credentials to log in</p>
+                <input type="email" name="email" placeholder="Enter Email" required>
+                <div class="div">
+                    <input id="password" type="password" name="password" placeholder="Enter Your Password" required>
+                    <div id="eye-icon" class="eye-icon">
+                        <img id="eye-img" src="../Img/eye_close.png" alt="">
+                    </div>
+                </div>
+                <button type="submit">Log In</button>
+                <div class="form-bottom">
+                    <p>Need Help?</p>
+                    <p><a href="signUp.html" class="log">Create an account</a></p>
+                </div>
+            </div>
+        </form>
+    </main>
 <footer class="footer">
    <div class="logo">
             <a href="../index.php"><img src="../Img/Logo.png" alt="Estatein"></a>
