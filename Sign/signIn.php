@@ -11,7 +11,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $sql = "SELECT * FROM users WHERE email='$email' LIMIT 1";
     $result = $conn->query($sql);
 
-    
+    if ($result->num_rows > 0) {
+        // Fetch the user record
+        $user = $result->fetch_assoc();
+
+        // Compare the password
+        if ($user['password'] === $password) {
+            // Start a session for the user
+            
+        }
+    } 
 
     $conn->close();
 }
