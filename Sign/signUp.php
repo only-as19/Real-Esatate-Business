@@ -23,12 +23,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email_check_query = "SELECT * FROM users WHERE email='$email' LIMIT 1";
     $result = $conn->query($email_check_query);
 
-    
+    if ($result->num_rows > 0) {
+        // If email exists, show error message and redirect back to sign-up form
+        $error_message = "This email is already taken.";
+        header("Location: signUp.html?error=" . urlencode($error_message));
+        exit();
+    }
 
     // Insert into database
-    
+    $sql = "INSERT INTO users (full_name, email, phone, user_type, location, password) 
+            VALUES ('$full_name', '$email', '$phone', '$user_type', '$location', '$password')";
 
-    
+    if ($conn->query($sql)) {
+        // Redirect to login page after successful sign-up
+        header("Location: signInForm.php");
+        exit();
+    } else {
+        echo "Error: " . $conn->error;
+    }
+
     $conn->close();
 }
 ?>
