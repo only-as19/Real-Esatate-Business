@@ -13,10 +13,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $confirm_password = $_POST['confirm_password']; // Added confirm password field
 
     // Check if the passwords match
-    
+    if ($password !== $confirm_password) {
+        $error_message = "Passwords do not match.";
+        header("Location: signUp.html?error=" . urlencode($error_message));
+        exit();
+    }
 
     // Check if email already exists
-    
+    $email_check_query = "SELECT * FROM users WHERE email='$email' LIMIT 1";
+    $result = $conn->query($email_check_query);
 
     
 
