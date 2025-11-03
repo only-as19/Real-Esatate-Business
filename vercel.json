@@ -1,0 +1,10 @@
+{
+  "functions": {
+    "api/**/*.php": {
+      "runtime": "[email protected]"
+    }
+  },
+  "routes": [
+    { "src": "/(.*)", "dest": "/api/index.php" }
+  ]
+}
