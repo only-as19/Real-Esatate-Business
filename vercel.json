@@ -1,7 +1,7 @@
 {
   "functions": {
     "api/**/*.php": {
-      "runtime": "[email protected]"
+      "runtime": "vercel-php@0.6.0"
     }
   },
   "routes": [
